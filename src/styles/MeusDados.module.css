@@ -1,0 +1,11 @@
+.dados {
+    display: flex;
+    flex-direction: column;
+    width: 500px;  
+    border: none;  
+}
+
+.dados input {
+ height: 40px;
+ border-radius: 10px 10px 10px 10px;
+}
