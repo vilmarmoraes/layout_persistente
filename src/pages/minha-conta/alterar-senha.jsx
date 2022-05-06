@@ -1,3 +1,4 @@
+import Conteudo from "../../components/Conteudo";
 import Layout from "../../components/Layout";
 import Sidebar from "../../components/Sidebar";
 import Tolbar from "../../components/Tolbar";
@@ -19,7 +20,7 @@ AlterarSenha.getLayout = function getLayout(page) {
       <Tolbar />
       <Layout>
         <Sidebar />
-        {page}
+        <Conteudo>{page}</Conteudo>
       </Layout>
     </div>
   );

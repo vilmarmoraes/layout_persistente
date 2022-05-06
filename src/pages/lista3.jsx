@@ -2,10 +2,11 @@ import styles from '../styles/Lista.module.css'
 import Layout from "../components/Layout";
 import Sidebar from "../components/Sidebar";
 import Tolbar from "../components/Tolbar";
+import Conteudo from '../components/Conteudo';
 
-function gerarLista() {
+function gerarLista(final = 10) {
   const lista = [];
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 1; i <= final; i++) {
     lista.push(
       <span className={styles.span}>
         {i}
@@ -18,7 +19,7 @@ function gerarLista() {
 export default function Lista3() {
   return (
     <div className={styles.lista}>
-      {gerarLista()}
+      {gerarLista(100)}
     </div>
   );
 }
@@ -29,7 +30,7 @@ Lista3.getLayout = function getLayout(page) {
       <Tolbar />
       <Layout>
         <Sidebar />
-        {page}
+        <Conteudo>{page}</Conteudo>
       </Layout>
     </div>
   );

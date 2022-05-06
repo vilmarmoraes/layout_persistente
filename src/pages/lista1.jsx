@@ -2,6 +2,7 @@ import styles from '../styles/Lista.module.css'
 import Layout from "../components/Layout";
 import Siderbar from "../components/Sidebar";
 import Tolbar from "../components/Tolbar";
+import Conteudo from '../components/Conteudo';
 
 export default function Lista1() {
   return (
@@ -26,7 +27,7 @@ Lista1.getLayout = function getLayout(page) {
       <Tolbar />
       <Layout>
         <Siderbar />
-        {page}
+        <Conteudo>{page}</Conteudo>
       </Layout>
     </div>
   );

@@ -1,8 +1,8 @@
 
 export default function Conteudo(props){
     return (
-        <div>
-            {props.Children}
+        <div style={{display: 'flex', justifyContent: 'center', padding: "10px", overflow: 'scroll', width: '100%'}}>
+            {props.children}
         </div>
     )
 }

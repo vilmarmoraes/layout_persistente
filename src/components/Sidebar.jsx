@@ -1,19 +1,24 @@
+import styles from "../styles/Sidebar.module.css";
 import Link from "next/link";
-//import styles from '../styles/Sidebar.module.css'
-import styles from '../styles/Sidebar.module.css'
 
 export default function Sidebar() {
   return (
     <nav className={styles.nav}>
       <input className={styles.input} placeholder="Search..." />
       <Link href="/">
-        <a>Home2</a>
+        <a>Home</a>
       </Link>
       <Link href="/about">
-        <a>About</a>
+        <a>Sobre</a>
+      </Link>
+      <Link href="/servico">
+        <a>Serviços</a>
+      </Link>
+      <Link href="/galeria">
+        <a>Galeria</a>
       </Link>
       <Link href="/contact">
-        <a>Contact</a>
+        <a>Contato</a>
       </Link>
       <Link href="/minha-conta/meus-dados">
         <a>Cadastro</a>
@@ -21,15 +26,22 @@ export default function Sidebar() {
       <Link href="/minha-conta/alterar-senha">
         <a>Alterar Senha</a>
       </Link>
+
       <Link href="/lista1">
-        <a>Lista1</a>
+        <a id="pan1">Lista1</a>
       </Link>
+
       <Link href="/lista2">
-        <a>Lista2</a>
+        <a>
+          Lista2
+        </a>
       </Link>
+
       <Link href="/lista3">
-        <a>Lista3</a>
+        <a>
+          Lista3
+        </a>
       </Link>
-    </nav>
+   </nav>
   );
 }
