@@ -6,29 +6,14 @@ import Tolbar from "../components/Tolbar";
 export default function About() {
   return (
     <section>
-      <h2>Layout Example (About)</h2>
+      <h2>Salão Nova Imagem</h2>
       <p>
-        This example adds a property <code>getLayout</code> to your page,
-        allowing you to return a React component for the layout. This allows you
-        to define the layout on a per-page basis. Since we're returning a
-        function, we can have complex nested layouts if desired.
+        Localizado na Avenida Micheli Simonete, 1464 Bairro São Miguel - Fraiburgo - SC
       </p>
       <p>
-        When navigating between pages, we want to persist page state (input
-        values, scroll position, etc.) for a Single-Page Application (SPA)
-        experience.
-      </p>
-      <p>
-        This layout pattern will allow for state persistence because the React
-        component tree is persisted between page transitions. To preserve state,
-        we need to prevent the React component tree from being discarded between
-        page transitions.
-      </p>
-      <h3>Try It Out</h3>
-      <p>
-        To visualize this, try tying in the search input in the{" "}
-        <code>Sidebar</code> and then changing routes. You'll notice the input
-        state is persisted.
+        Meu nome é Solange Spiering e o salão Nova Imagem foi a realização de um sonho que tinha em um dia atuar nessa profissão. Sou muito feliz
+        em poder atender meus clientes e ver a satisfação de cada um. Meu objetivo é estar cada vez mais preparada para poder atende-los da melhor
+        forma possivel.
       </p>
     </section>
   );

@@ -1,5 +1,6 @@
 import Conteudo from "../components/Conteudo";
 import Layout from "../components/Layout";
+import Produto from "../components/Produto";
 import Sidebar from "../components/Sidebar";
 import Tolbar from "../components/Tolbar";
 
@@ -16,6 +17,7 @@ export default function Index() {
         <li>Sáb.: 09:00 – 17:30</li>
         <li>Dom.: Fechado</li>
       </ul>
+      <Produto/>
     </section>
   );
 }

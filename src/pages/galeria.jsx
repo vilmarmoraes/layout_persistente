@@ -2,13 +2,22 @@ import Conteudo from "../components/Conteudo";
 import Layout from "../components/Layout";
 import Sidebar from "../components/Sidebar";
 import Tolbar from "../components/Tolbar";
+import Carrossel from "../components/Carrossel"
+
+//tem que instalar o bootstrap para react usando o comando abaixo:
+//npm install react-bootstrap bootstrap
+
 
 export default function Galeria() {
+
   return (
-    <div>
-      <img src="liso01.jpg" alt="" />
-      <img src="liso02.jpg" alt="" />
-    </div>
+    <div style={{
+      backgroundColor: "gray",
+      width: "800px",
+      height: "400px"
+    }}>
+    <Carrossel />
+  </div>
   );
 }
 
